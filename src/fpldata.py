@@ -15,6 +15,7 @@ df['100 adj'] = df['total_points'].rolling(window=100).mean()
 ax1 = plt.subplot2grid((6,1), (0, 0), rowspan=5, colspan=1)
 ax2 = plt.subplot2grid((6,1), (5, 0), rowspan=1, colspan=1,)
 ax1.scatter(df['selected'], df['total_points'])
+
 #ax1.scatter(df['selected'], df[''])
 #ax2.bar(df['minutes'], df['GW'])
 
